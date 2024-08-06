@@ -11,5 +11,15 @@
 }
 
 .entradas-usuario {
-    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: flex;
+    margin-left: 80%;
 }
