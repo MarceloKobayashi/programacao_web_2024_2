@@ -1,13 +1,6 @@
 #titulo {
     text-align: center;
-    color: blue;
-}
-
-.rodape {
-    text-align: center;
-    color: red;
-    padding: 12px;
-    border: 1px solid;
+    color: black;
 }
 
 .entradas-usuario {
@@ -23,3 +16,18 @@
     display: flex;
     margin-left: 80%;
 }
+
+
+.rodape {
+    text-align: center;
+    color: red;
+    background-color: black;
+    padding: 12px;
+    border: 1px solid black;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
