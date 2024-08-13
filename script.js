@@ -23,6 +23,7 @@ function validaCPF(cpf) {
         return false;
     }
 
+    //REGEX
     if (!/^[\d.-]+$/.test(cpf)) {    //Do início ao fim, só tem [\d.-] uma ou mais vezes, true
         alert("CPF só pode conter números, '.' ou '-'");
         return false;
