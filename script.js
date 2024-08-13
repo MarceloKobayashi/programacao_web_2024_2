@@ -29,7 +29,18 @@ function validaCPF(cpf) {
         return false;
     }
 
-    if (!/^[\d].[\d].[\d]-[\d]$/)
+    if (length(cpf) != 11 || length(cpf) != 14) {
+        alert("CPF deve ter 11 ou 14(com pontos e hífen) dígitos.");
+        return false;
+    }
+
+    if (length(cpf) == 11 && !/^[\d]+$/) {
+        //calculo cpf valido
+        alert("Reescreva o CPF com apenas números ou no formato 123.123.123-12");
+        return false;
+    }
+
+    if (length(cpf) == 14 && !/[\d].[\d].[\d]-[\d]/)
 
     return true;
 }
