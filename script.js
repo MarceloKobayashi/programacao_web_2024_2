@@ -29,5 +29,7 @@ function validaCPF(cpf) {
         return false;
     }
 
+    if (!/^[\d].[\d].[\d]-[\d]$/)
+
     return true;
 }
