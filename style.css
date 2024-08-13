@@ -1,33 +1,44 @@
+* {
+    margin: 0;
+}
+
 #titulo {
     text-align: center;
     color: black;
 }
 
 .entradas-usuario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 200px;
-    margin: auto;
-    margin-bottom: 30px;
+    border: black solid 1px;
+
+    width: 50%; /*vai ter metade do tamanho do pai(body)*/
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute; /*elemento fixo em relação ao pai*/
+    left: 50%;
+    top: 50%;   /*canto superior esquerdo da div no meio da página*/
+
+    transform: translate(-50%, -50%); /*vira metade para esquerda e metade para cima*/
+
+    padding: 0.2rem;
+}
+
+input {
+    display: block;
+    margin: 0.5rem;
 }
 
 .botao {
-    display: flex;
-    margin-left: 80%;
+    margin: 0 0 0.5rem 0.5rem;
 }
-
 
 .rodape {
     text-align: center;
-    color: red;
-    background-color: black;
-    padding: 12px;
-    border: 1px solid black;
+    padding: 5px 0px;
+    background-color: #ccc;
     
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    position: fixed;    /*transforma para display inline*/
+    bottom: 0;          /*gruda o rodapé na base da página*/
+    width: 100%;        /*faz ocupar toda a width*/
 }
 
