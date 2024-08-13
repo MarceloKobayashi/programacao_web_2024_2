@@ -10,14 +10,15 @@
     <h1 id="titulo">Revisão de HTML e CSS</h1>
 
     <div class="entradas-usuario"> <!--display block - ocupa 100% width pai-->
-        <input type="text" placeholder="Nome">
-        <input type="number" placeholder="Idade">
-        <input type="email" placeholder="Email">
-        <button class="botao">OK</button>
+        <input id="nome" type="text" placeholder="Nome">
+        <input id="idade" type="number" placeholder="Idade">
+        <input id="cpf" type="text" placeholder="CPF">
+        <button onclick="submeter();" class="botao">OK</button>
 
     </div>
     
-    <p class="rodape">Criado por MarceloKobayashi</p> <!--display block-->
+    <footer class="rodape">Criado por MarceloKobayashi</p> <!--display block-->
 
+    <script src="script.js"></script> <!--implementando lógica-->
 </body>
 </html>
