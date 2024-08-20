@@ -55,8 +55,8 @@ function validaCPF(cpf) {
 }
 
 function calculoCPF(cpf) {
-    cpf = cpf.replace(".", "");
-    cpf = cpf.replace("-", "");
+    cpf = cpf.replace(/\./g, "");
+    cpf = cpf.replace(/-/g, "");
 
     let primeiraSoma = 0;
     let primeiroElemento = 10;
