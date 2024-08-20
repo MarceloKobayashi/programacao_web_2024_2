@@ -61,7 +61,7 @@ function calculoCPF(cpf) {
     let primeiraSoma = 0;
 
     for (let i = 0; i < 9; i++) {
-        let numero = Number(cpf[i]);
+        let numero = cpf[i];
         primeiraSoma += numero * (10 - i);
     }
 
@@ -77,7 +77,7 @@ function calculoCPF(cpf) {
     let segundaSoma = 0;
 
     for (let j = 0; j < 10; j++) {
-        let numero = Number(cpf[j]);
+        let numero = cpf[j];
         segundaSoma += numero * (11 - j);
     }
 
