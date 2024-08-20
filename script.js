@@ -59,12 +59,10 @@ function calculoCPF(cpf) {
     cpf = cpf.replaceAll("-", "");
 
     let primeiraSoma = 0;
-    let primeiroElemento = 10;
 
     for (let i = 0; i < 9; i++) {
         let numero = Number(cpf[i]);
-        primeiraSoma += numero * primeiroElemento;
-        primeiroElemento--;
+        primeiraSoma += numero * (10 - i);
     }
 
     let primeiroDigito = 11 - (primeiraSoma % 11);
@@ -77,12 +75,10 @@ function calculoCPF(cpf) {
     }
 
     let segundaSoma = 0;
-    let segundoElemento = 11;
 
-    for (let i = 0; i < 10; i++) {
-        let numero = Number(cpf[i]);
-        segundaSoma += numero * segundoElemento;
-        segundoElemento--;
+    for (let j = 0; j < 10; j++) {
+        let numero = Number(cpf[j]);
+        segundaSoma += numero * (11 - j);
     }
 
     let segundoDigito = 11 - (segundaSoma % 11);
